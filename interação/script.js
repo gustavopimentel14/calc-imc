@@ -1,4 +1,4 @@
-
+res.innerHTML =''
 function calcular(){
     let altura = parseFloat(document.getElementById('altura').value)
     let peso = parseFloat(document.getElementById('peso').value)
@@ -7,8 +7,9 @@ function calcular(){
     res.innerHTML = `<p>Sua altura é ${altura}m e seu peso é ${peso}kg.</p>`
     res.innerHTML += `<p>Seu IMC é ${imc.toFixed(2)}</p>`
 
-    if(imc<18.5){
-        
+    if(imc<16){
+        res.innerHTML += 'Magreza grave'
+    } else if(imc<18.5){
         res.innerHTML += 'Está abaixo do peso.'
     } else if (imc>=18.5 && imc<25){
         res.innerHTML += 'Está no peso ideal.'
@@ -21,5 +22,6 @@ function calcular(){
     } else if(imc>=40){
         res.innerHTML += 'Está com obesidade grau III.'
     }
+    
     
 }

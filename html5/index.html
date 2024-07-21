@@ -4,21 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <h1>Calcule seu IMC</h1>
-    <div>
-        <label for="naltura">Digite sua altura em metros: </label>
-        <input type="number" name="naltura" id="altura" placeholder="Ex: 1,80"> m
-    </div>
-    <div>
-        <label for="npeso">Digite seu peso em quilos: </label>
-        <input type="number" name="npeso" id="peso" placeholder="Ex.: 75"> kg
-    </div>
-    <div>
-        <input type="button" value="Calcular IMC" onclick="calcular()">
-    </div>
-    <div id="resultado"></div>
+    <header>
+        <h1>Saúde com Dr. Gustavo Pimentel</h1>
+    </header>
+    <main>
+        <article>
+            <h2>IMC: o que é, e como se calcula.</h2>
+            <p>O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela Organização Mundial de Saúde (OMS), para calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do indivíduo, o IMC também aponta níveis de magreza e obesidade, que são usados para nortear o trabalho de profissionais de saúde e de educadores físicos.
+                Para obter o IMC, basta dividir o seu peso (em quilos) pela altura (em metros) elevada ao quadrado (altura x altura). De acordo com o indicador, o peso considerado saudável é aquele situado entre 18,5 e 24,9.
+        
+                Os outros marcadores do IMC são:
+        
+                - magreza grave (menor que 16);
+                - abaixo do peso (entre 17 e 18,4);
+                - sobrepeso (índice de 25 a 29,9);
+                - obesidade grau I (30 a 34,9);
+                - obesidade grau II (35 a 39,9)
+                - obesidade grau III (acima de 40).</p>
+                <img src="../imagens/imc-2.png" alt="imc">
+        </article>
+        <section id="calculo">
+            <h3>Calcule seu IMC</h3>
+            <div>
+                <label for="naltura">Digite sua altura em metros:</label>
+                <input type="number" name="naltura" id="altura" placeholder="Ex.: 1,80"> m
+            </div>
+            <div>
+                <label for="npeso">Digite seu peso em quilos:</label>
+                <input type="number" name="npeso" id="peso" placeholder="Ex.: 75"> kg
+            </div>
+            <div>
+                <input type="button" value="Calcular IMC" id="botao" onclick="calcular()">
+            </div>
+            <div id="resultado"></div>
+        </section>
+    </main>
 
     <script src="../interação/script.js"></script>    
 </body>

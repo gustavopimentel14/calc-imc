@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(71, 231, 71);
+    height: 120px;
+    text-align: center;
+}
+h1{
+    padding-top: 40px;
+}
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+h2{
+    padding: 10px;
+}
+article p{
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+img{
+    width: 100%;
+}
+#calculo{
+    padding: 10px;
+    width: 450px;
+}
+h3{
+    margin-bottom: 10px;
+}
+#altura{
+    width: 100px;
+    margin-bottom: 5px;
+}
+#peso{
+    width: 113px;
+}
+#botao{
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: darkgray;   
+}
+#botao:hover{
+    background-color: gray;
+    transition: 0.2s;
+    cursor: pointer;
+}
